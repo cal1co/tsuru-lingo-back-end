@@ -1,12 +1,13 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+// const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const jwtAuthenticate = require('express-jwt')
 
-
+const langsController = require('./controllers/langsController')
 // This should be in a .env file (NOT YOUR REPO) and
 // it should be generated from a program like md5
 const SERVER_SECRET_KEY = 'yourSecretKeyHereCHICKEN'
@@ -24,14 +25,17 @@ app.listen(PORT, () => {
 });
 
 // MongoDB initialisation section //////////////////
-
+const dotenv = require('dotenv').config()
 const mongoose = require('mongoose');
 
 // Load our Flight model file (and any others?)
 // const Flight = require('./models/Flight');
 
 // Connect to DB server; note the DB selection: 'ba', like a path
-mongoose.connect('mongodb://127.0.0.1/tsuru');
+// mongoose.connect('mongodb://127.0.0.1/tsuru');
+
+uri = process.env.MONGO_URI || 'mongodb://127.0.0.1/tsuru'
+mongoose.connect(uri);
 
 const db = mongoose.connection;
 
@@ -42,7 +46,6 @@ db.on('error', (err) => {
 });
 
 app.use( express.urlencoded({ extended: true }) );
-
 
 
 app.post('/login', async (req, res) => {
@@ -93,3 +96,6 @@ app.post('/login', async (req, res) => {
 //     }
 // })
 
+app.get('/:lang', langsController.show)
+
+app.get('/:lang/:module', langsController.module)

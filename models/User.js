@@ -15,7 +15,7 @@ const UserSchema = new mongoose.Schema({
             // can create the equivalent of an ActiveRecord belongs_to association
             // ... in Mongoose this is called a 'reference'
             ref:'Lang', // <-- a user bel
-            type: mongoose.Schema.Types.ObjectID,
+            type: mongoose.Schema.Types.ObjectId,
         }
     ],
 

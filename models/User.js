@@ -18,6 +18,12 @@ const UserSchema = new mongoose.Schema({
             type: mongoose.Schema.Types.ObjectId,
         }
     ],
+    passed:[
+        {
+            ref:'Lesson',
+            type: mongoose.Schema.Types.ObjectId
+        }
+    ]
 
 })
 

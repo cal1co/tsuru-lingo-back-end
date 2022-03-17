@@ -58,6 +58,89 @@ db.once('open', async () => {
                         kana:'お',
                         image:'https://4ch.tokyo/hiragana/img/5-1-o-hiragana.jpg'
                     },
+                    // {
+                    //     word:'apple',
+                    //     kana:'りんご',
+                    //     image:'https://media.istockphoto.com/vectors/simple-apple-in-flat-style-vector-illustration-vector-id1141529240?k=20&m=1141529240&s=612x612&w=0&h=_j9z-sPT6AqFDSSXHnSYWrXOvDOgyMmSdTUrBiZULCo='
+                    // },
+                    // {
+                    //     word:'cloud',
+                    //     kana:'くも',
+                    //     image:'https://images.unsplash.com/photo-1569428034239-f9565e32e224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80'
+                    // },
+                ],
+            }, 
+            {
+                num:1,
+                part:2,
+                vocab: [
+                    {
+                        word:'ka',
+                        kana:'か',
+                        image:'https://4ch.tokyo/hiragana/img/6-1-ka-hiragana.jpg'
+                    },
+                    {
+                        word:'ki',
+                        kana:'き',
+                        image:'https://4ch.tokyo/hiragana/img/7-1-ki-hiragana.jpgg'
+                    },
+                    {
+                        word:'ku',
+                        kana:'く',
+                        image:'https://4ch.tokyo/hiragana/img/8-1-ku-hiragana.jpg'
+                    },
+                    {
+                        word:'ke',
+                        kana:'け',
+                        image:'https://4ch.tokyo/hiragana/img/9-1-ke-hiragana.jpg'
+                    },
+                    {
+                        word:'ko',
+                        kana:'こ',
+                        image:'https://4ch.tokyo/hiragana/img/10-1-oo-hiragana.jpg'
+                    },
+                    
+                    // {
+                    //     word:'apple',
+                    //     kana:'りんご',
+                    //     image:'https://media.istockphoto.com/vectors/simple-apple-in-flat-style-vector-illustration-vector-id1141529240?k=20&m=1141529240&s=612x612&w=0&h=_j9z-sPT6AqFDSSXHnSYWrXOvDOgyMmSdTUrBiZULCo='
+                    // },
+                    // {
+                    //     word:'cloud',
+                    //     kana:'くも',
+                    //     image:'https://images.unsplash.com/photo-1569428034239-f9565e32e224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80'
+                    // },
+                ],
+            }, 
+            {
+                num:1,
+                part:3,
+                vocab: [
+                    {
+                        word:'sa',
+                        kana:'さ',
+                        image:'https://4ch.tokyo/hiragana/img/11-1-sa-hiragana.jpg'
+                    },
+                    {
+                        word:'shi',
+                        kana:'し',
+                        image:'https://4ch.tokyo/hiragana/img/12-1-shi-hiragana.jpg'
+                    },
+                    {
+                        word:'su',
+                        kana:'す',
+                        image:'https://4ch.tokyo/hiragana/img/13-1-su-hiragana.jpg'
+                    },
+                    {
+                        word:'se',
+                        kana:'せ',
+                        image:'https://4ch.tokyo/hiragana/img/14-1-se-hiragana.jpg'
+                    },
+                    {
+                        word:'so',
+                        kana:'そ',
+                        image:'https://4ch.tokyo/hiragana/img/15-1-so-hiragana.jpg'
+                    },
                 ],
             }, 
         ]);

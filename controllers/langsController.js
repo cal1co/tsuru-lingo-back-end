@@ -1,6 +1,7 @@
 const { off } = require('../models/Lang');
 const Lang = require('../models/Lang')
 const Module = require('../models/Module')
+const Lesson = require('../models/Lesson')
 
 module.exports = {
 
@@ -18,14 +19,14 @@ module.exports = {
 
     async module(req, res){
         try {
-            const module = await Lang.findOne({ code: req.params.lang })
-            .populate('modules')
-                let content = module.modules[req.params.module - 1]
+            const module = await Module.findOne({ code: req.params.lang })
+            .populate('lessons')
+                let content = module.lessons[req.params.module - 1] // this is hard coded <---- should change depending on whether or not a user has completed the previous lesson!!!!!
                 res.json(content)
-                console.log('module content:', content)
+                console.log('fetching module content:', content)
         } catch (err) {
             console.log("ERROR LOADING MODULE", err)
-            res.senStatus(500)
+            res.sendStatus(500)
         }
     }
 

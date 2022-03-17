@@ -19,7 +19,9 @@ module.exports = {
         try {
             const module = await Lang.findOne({ code: req.params.lang })
             .populate('modules')
-                res.json(module.modules[req.params.module - 1])
+                let content = module.modules[req.params.module - 1]
+                res.json(content)
+                console.log('module content:', content)
         } catch (err) {
             console.log("ERROR LOADING MODULE", err)
             res.senStatus(500)

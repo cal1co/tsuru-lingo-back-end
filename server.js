@@ -47,6 +47,31 @@ db.on('error', (err) => {
 
 app.use( express.urlencoded({ extended: true }) );
 
+// app.use(checkAuth())
+
+
+// app.use(async (req, res, next) => {
+// try{
+// const user = await User.findOne({_id:req.auth._id})
+// if (user === null){
+    // res.sendStatus(401) 
+// } else {
+    // req.user = user
+    // next()
+// }
+// catch(err){
+// 
+// }
+
+
+
+// })
+
+
+// INDEX JS <-  if (token) axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
+
+
+
 
 app.post('/login', async (req, res) => {
     // curl http://localhost:3000/login -X POST -d 'email=ro@ga.co&password=chicken'

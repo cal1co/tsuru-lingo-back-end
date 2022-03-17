@@ -8,6 +8,7 @@ module.exports = {
         try{
             const lang = await Lang.findOne({ code: req.params.lang })
             .populate('modules')
+            console.log('GETTING LANG', lang)
                 res.json( lang );
         } catch(err) {
             console.log("ERROR LOADING LANGUAGE", err)

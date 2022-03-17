@@ -50,6 +50,8 @@ log/
 node_modules/
 /yarn-error.log
 
+.env
+
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.

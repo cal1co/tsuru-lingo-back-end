@@ -96,6 +96,38 @@ db.once('open', async () => {
                 num:1,
                 part:3,
                 vocab: [
+                    {
+                        word:'sa',
+                        kana:'さ',
+                        image:'https://4ch.tokyo/hiragana/img/11-1-sa-hiragana.jpg'
+                    },
+                    {
+                        word:'shi',
+                        kana:'し',
+                        image:'https://4ch.tokyo/hiragana/img/12-1-shi-hiragana.jpg'
+                    },
+                    {
+                        word:'su',
+                        kana:'す',
+                        image:'https://4ch.tokyo/hiragana/img/13-1-su-hiragana.jpg'
+                    },
+                    {
+                        word:'se',
+                        kana:'せ',
+                        image:'https://4ch.tokyo/hiragana/img/14-1-se-hiragana.jpg'
+                    },
+                    {
+                        word:'so',
+                        kana:'そ',
+                        image:'https://4ch.tokyo/hiragana/img/15-1-so-hiragana.jpg'
+                    },
+                ],
+            }, 
+            {
+                num:1,
+                part:4,
+                vocab: [
+                    
                     { // words using what we've learnt !! ! !! ! !! ! !! ! !!
                         word:'red',
                         kana:'あかい',
@@ -136,37 +168,6 @@ db.once('open', async () => {
                     //     kana:'くも',
                     //     image:'https://images.unsplash.com/photo-1569428034239-f9565e32e224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80'
                     // },
-                ],
-            }, 
-            {
-                num:1,
-                part:4,
-                vocab: [
-                    {
-                        word:'sa',
-                        kana:'さ',
-                        image:'https://4ch.tokyo/hiragana/img/11-1-sa-hiragana.jpg'
-                    },
-                    {
-                        word:'shi',
-                        kana:'し',
-                        image:'https://4ch.tokyo/hiragana/img/12-1-shi-hiragana.jpg'
-                    },
-                    {
-                        word:'su',
-                        kana:'す',
-                        image:'https://4ch.tokyo/hiragana/img/13-1-su-hiragana.jpg'
-                    },
-                    {
-                        word:'se',
-                        kana:'せ',
-                        image:'https://4ch.tokyo/hiragana/img/14-1-se-hiragana.jpg'
-                    },
-                    {
-                        word:'so',
-                        kana:'そ',
-                        image:'https://4ch.tokyo/hiragana/img/15-1-so-hiragana.jpg'
-                    },
                 ],
             }, 
         ]);

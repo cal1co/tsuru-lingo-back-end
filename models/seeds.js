@@ -104,7 +104,7 @@ db.once('open', async () => {
                     {
                         word:'shi',
                         kana:'し',
-                        image:'https://4ch.tokyo/hiragana/img/12-1-shi-hiragana.jpg'
+                        image:'https://4ch.tokyo/hiragana/img/12-1-si-hiragana.jpg'
                     },
                     {
                         word:'su',

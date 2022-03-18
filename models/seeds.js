@@ -89,7 +89,6 @@ db.once('open', async () => {
                         kana:'こ',
                         image:'https://4ch.tokyo/hiragana/img/10-1-oo-hiragana.jpg'
                     },
-                    
                 ],
             }, 
             {

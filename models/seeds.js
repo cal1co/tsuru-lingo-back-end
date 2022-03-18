@@ -58,16 +58,6 @@ db.once('open', async () => {
                         kana:'お',
                         image:'https://4ch.tokyo/hiragana/img/5-1-o-hiragana.jpg'
                     },
-                    // {
-                    //     word:'apple',
-                    //     kana:'りんご',
-                    //     image:'https://media.istockphoto.com/vectors/simple-apple-in-flat-style-vector-illustration-vector-id1141529240?k=20&m=1141529240&s=612x612&w=0&h=_j9z-sPT6AqFDSSXHnSYWrXOvDOgyMmSdTUrBiZULCo='
-                    // },
-                    // {
-                    //     word:'cloud',
-                    //     kana:'くも',
-                    //     image:'https://images.unsplash.com/photo-1569428034239-f9565e32e224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80'
-                    // },
                 ],
             }, 
             {
@@ -100,6 +90,42 @@ db.once('open', async () => {
                         image:'https://4ch.tokyo/hiragana/img/10-1-oo-hiragana.jpg'
                     },
                     
+                ],
+            }, 
+            {
+                num:1,
+                part:3,
+                vocab: [
+                    { // words using what we've learnt !! ! !! ! !! ! !! ! !!
+                        word:'red',
+                        kana:'あかい',
+                        image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEX/AAAZ4gk3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC'
+                    },
+                    {
+                        word:'blue',
+                        kana:'あおい',
+                        image:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Solid_blue.svg/225px-Solid_blue.svg.png'
+                    },
+                    {
+                        word:'sushi',
+                        kana:'すし',
+                        image:'https://www.pngitem.com/pimgs/m/346-3469775_japanese-cuisine-makizushi-asian-transparent-background-sushi-clipart.png'
+                    },
+                    {
+                        word:'face',
+                        kana:'かお',
+                        image:'https://www.kindpng.com/picc/m/785-7857115_boy-face-clip-art-at-clipart-library-face.png'
+                    },
+                    {
+                        word:'station',
+                        kana:'えき',
+                        image:'https://i.pinimg.com/originals/ea/3f/d3/ea3fd35a9cfe377f8bce90b2563fd4a4.jpg'
+                    },
+                    {
+                        word:'to listen',
+                        kana:'きく',
+                        image:'https://www.seekpng.com/png/detail/108-1084339_vector-library-stock-free-listen-cliparts-download-ear.png'
+                    },
                     // {
                     //     word:'apple',
                     //     kana:'りんご',
@@ -110,42 +136,6 @@ db.once('open', async () => {
                     //     kana:'くも',
                     //     image:'https://images.unsplash.com/photo-1569428034239-f9565e32e224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80'
                     // },
-                ],
-            }, 
-            {
-                num:1,
-                part:3,
-                vocab: [
-                    { // words using what we've learnt !! ! !! ! !! ! !! ! !!
-                        word:'red',
-                        kana:'あかい',
-                        image:'https://4ch.tokyo/hiragana/img/11-1-sa-hiragana.jpg'
-                    },
-                    {
-                        word:'blue',
-                        kana:'あおい',
-                        image:'https://4ch.tokyo/hiragana/img/12-1-shi-hiragana.jpg'
-                    },
-                    {
-                        word:'sushi',
-                        kana:'すし',
-                        image:'https://4ch.tokyo/hiragana/img/13-1-su-hiragana.jpg'
-                    },
-                    {
-                        word:'face',
-                        kana:'かお',
-                        image:'https://4ch.tokyo/hiragana/img/14-1-se-hiragana.jpg'
-                    },
-                    {
-                        word:'station',
-                        kana:'えき',
-                        image:'https://4ch.tokyo/hiragana/img/15-1-so-hiragana.jpg'
-                    },
-                    {
-                        word:'to listen',
-                        kana:'きく',
-                        image:'https://4ch.tokyo/hiragana/img/15-1-so-hiragana.jpg'
-                    },
                 ],
             }, 
             {
@@ -209,7 +199,7 @@ db.once('open', async () => {
             {
                 num:1,
                 title:'intro to hiragana',
-                lessons:lessons[0],
+                lessons:[lessons[0], lessons[1], lessons[2], lessons[3]],
             }, 
         ]);
     } catch( err ){

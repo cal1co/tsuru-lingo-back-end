@@ -24,6 +24,7 @@ module.exports = {
                 let content = module.lessons[req.params.module - 1] // this is hard coded <---- should change depending on whether or not a user has completed the previous lesson!!!!!
                 res.json(content)
                 console.log('fetching module content:', content)
+                console.log('all content:', module.lessons)
         } catch (err) {
             console.log("ERROR LOADING MODULE", err)
             res.sendStatus(500)

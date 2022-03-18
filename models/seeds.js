@@ -116,6 +116,42 @@ db.once('open', async () => {
                 num:1,
                 part:3,
                 vocab: [
+                    { // words using what we've learnt !! ! !! ! !! ! !! ! !!
+                        word:'red',
+                        kana:'あかい',
+                        image:'https://4ch.tokyo/hiragana/img/11-1-sa-hiragana.jpg'
+                    },
+                    {
+                        word:'blue',
+                        kana:'あおい',
+                        image:'https://4ch.tokyo/hiragana/img/12-1-shi-hiragana.jpg'
+                    },
+                    {
+                        word:'sushi',
+                        kana:'すし',
+                        image:'https://4ch.tokyo/hiragana/img/13-1-su-hiragana.jpg'
+                    },
+                    {
+                        word:'face',
+                        kana:'かお',
+                        image:'https://4ch.tokyo/hiragana/img/14-1-se-hiragana.jpg'
+                    },
+                    {
+                        word:'station',
+                        kana:'えき',
+                        image:'https://4ch.tokyo/hiragana/img/15-1-so-hiragana.jpg'
+                    },
+                    {
+                        word:'to listen',
+                        kana:'きく',
+                        image:'https://4ch.tokyo/hiragana/img/15-1-so-hiragana.jpg'
+                    },
+                ],
+            }, 
+            {
+                num:1,
+                part:4,
+                vocab: [
                     {
                         word:'sa',
                         kana:'さ',

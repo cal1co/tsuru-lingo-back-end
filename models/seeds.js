@@ -87,7 +87,7 @@ db.once('open', async () => {
                     {
                         word:'ko',
                         kana:'こ',
-                        image:'https://4ch.tokyo/hiragana/img/10-1-oo-hiragana.jpg'
+                        image:'https://4ch.tokyo/hiragana/img/10-1-ko-hiragana.jpg'
                     },
                 ],
             }, 
@@ -132,7 +132,7 @@ db.once('open', async () => {
                         kana:'あかい',
                         image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEX/AAAZ4gk3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC'
                     },
-                    {
+                    {   
                         word:'blue',
                         kana:'あおい',
                         image:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Solid_blue.svg/225px-Solid_blue.svg.png'

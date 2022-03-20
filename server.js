@@ -99,3 +99,6 @@ app.post('/login', async (req, res) => {
 app.get('/:lang', langsController.show)
 
 app.get('/:lang/:module', langsController.module)
+
+
+app.post('/:module/pass', langsController.pass)

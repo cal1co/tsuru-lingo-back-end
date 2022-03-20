@@ -29,6 +29,17 @@ module.exports = {
             console.log("ERROR LOADING MODULE", err)
             res.sendStatus(500)
         }
+    },
+
+    async pass(req, res){
+        try {
+            console.log('PASS CALLED', req.body.token)
+        } catch (err) {
+            
+        }
+
+
     }
+
 
 }

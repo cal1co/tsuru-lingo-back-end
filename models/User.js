@@ -5,6 +5,7 @@ const UserSchema = new mongoose.Schema({
     name:String,
     email:String,
     passwordDigest:String,
+    xp:Number,
     createdAt:{
         type:Date,
         default: Date.now, // automatically default this field to the current date

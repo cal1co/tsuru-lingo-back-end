@@ -143,3 +143,5 @@ app.get('/users/current/user', async (req, res) => {
 
 })
 
+app.get('/complete/modules/:num', langsController.practice)
+

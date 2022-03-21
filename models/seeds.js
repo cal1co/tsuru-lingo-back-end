@@ -157,24 +157,14 @@ db.once('open', async () => {
                         kana:'きく',
                         image:'https://www.seekpng.com/png/detail/108-1084339_vector-library-stock-free-listen-cliparts-download-ear.png'
                     },
-                    // {
-                    //     word:'apple',
-                    //     kana:'りんご',
-                    //     image:'https://media.istockphoto.com/vectors/simple-apple-in-flat-style-vector-illustration-vector-id1141529240?k=20&m=1141529240&s=612x612&w=0&h=_j9z-sPT6AqFDSSXHnSYWrXOvDOgyMmSdTUrBiZULCo='
-                    // },
-                    // {
-                    //     word:'cloud',
-                    //     kana:'くも',
-                    //     image:'https://images.unsplash.com/photo-1569428034239-f9565e32e224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80'
-                    // },
                 ],
             }, 
             {
-                num:1,
-                part:5,
+                num:2,
+                part:1,
                 vocab: [
                     
-                    { // words using what we've learnt !! ! !! ! !! ! !! ! !!
+                    { 
                         word:'ta',
                         kana:'た',
                         image:'https://4ch.tokyo/hiragana/img/16-2-ta-hiragana.jpg'
@@ -199,16 +189,234 @@ db.once('open', async () => {
                         kana:'と',
                         image:'https://4ch.tokyo/hiragana/img/20-2-to-hiragana.jpg'
                     },
-                    // {
-                    //     word:'apple',
-                    //     kana:'りんご',
-                    //     image:'https://media.istockphoto.com/vectors/simple-apple-in-flat-style-vector-illustration-vector-id1141529240?k=20&m=1141529240&s=612x612&w=0&h=_j9z-sPT6AqFDSSXHnSYWrXOvDOgyMmSdTUrBiZULCo='
-                    // },
-                    // {
-                    //     word:'cloud',
-                    //     kana:'くも',
-                    //     image:'https://images.unsplash.com/photo-1569428034239-f9565e32e224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80'
-                    // },
+                ],
+            }, 
+            {
+                num:2,
+                part:2,
+                vocab: [
+                    
+                    { // words using what we've learnt !! ! !! ! !! ! !! ! !!
+                        word:'',
+                        kana:'', ///////////////////////////////////////////////////
+                        image:''
+                    },
+                ],
+            }, 
+            {
+                num:2,
+                part:3,
+                vocab: [
+                    
+                    { 
+                        word:'na',
+                        kana:'な',
+                        image:'https://4ch.tokyo/hiragana/img/21-2-na-hiragana.jpg'
+                    },
+                    {   
+                        word:'ni',
+                        kana:'に',
+                        image:'https://4ch.tokyo/hiragana/img/22-2-ni-hiragana.jpg'
+                    },
+                    {
+                        word:'nu',
+                        kana:'ぬ',
+                        image:'https://4ch.tokyo/hiragana/img/23-2-nu-hiragana.jpg'
+                    },
+                    {
+                        word:'ne',
+                        kana:'ね',
+                        image:'https://4ch.tokyo/hiragana/img/24-2-ne-hiragana.jpg'
+                    },
+                    {
+                        word:'no',
+                        kana:'の',
+                        image:'https://4ch.tokyo/hiragana/img/25-2-no-hiragana.jpg'
+                    },
+                ],
+            }, 
+            {
+                num:2,
+                part:4,
+                vocab: [
+                    
+                    { // words using what we've learnt !! ! !! ! !! ! !! ! !!
+                        word:'',
+                        kana:'', ///////////////////////////////////////////////////
+                        image:''
+                    },
+                ],
+            }, 
+            {
+                num:3,
+                part:1,
+                vocab: [
+                    { 
+                        word:'ha',
+                        kana:'は',
+                        image:'https://4ch.tokyo/hiragana/img/26-2-ha-hiragana.jpg'
+                    },
+                    {   
+                        word:'hi',
+                        kana:'ひ',
+                        image:'https://4ch.tokyo/hiragana/img/27-2-hi-hiragana.jpg'
+                    },
+                    {
+                        word:'fu/hu',
+                        kana:'ふ',
+                        image:'https://4ch.tokyo/hiragana/img/28-2-hu-hiragana.jpg'
+                    },
+                    {
+                        word:'he',
+                        kana:'へ',
+                        image:'https://4ch.tokyo/hiragana/img/29-2-he-hiragana.jpg'
+                    },
+                    {
+                        word:'ho',
+                        kana:'ほ',
+                        image:'https://4ch.tokyo/hiragana/img/30-2-ho-hiragana.jpg'
+                    },
+                ],
+            }, 
+            {
+                num:3,
+                part:2,
+                vocab: [
+                    
+                    { // words using what we've learnt !! ! !! ! !! ! !! ! !!
+                        word:'',
+                        kana:'', ///////////////////////////////////////////////////
+                        image:''
+                    },
+                ],
+            }, 
+            {
+                num:3,
+                part:3,
+                vocab: [
+                    { 
+                        word:'ma',
+                        kana:'ま',
+                        image:'https://4ch.tokyo/hiragana/img/31-2-ha-hiragana.jpg'
+                    },
+                    {   
+                        word:'mi',
+                        kana:'み',
+                        image:'https://4ch.tokyo/hiragana/img/32-2-hi-hiragana.jpg'
+                    },
+                    {
+                        word:'fu/mu',
+                        kana:'む',
+                        image:'https://4ch.tokyo/hiragana/img/33-2-mu-hiragana.jpg'
+                    },
+                    {
+                        word:'me',
+                        kana:'め',
+                        image:'https://4ch.tokyo/hiragana/img/34-2-me-hiragana.jpg'
+                    },
+                    {
+                        word:'mo',
+                        kana:'も',
+                        image:'https://4ch.tokyo/hiragana/img/35-2-mo-hiragana.jpg'
+                    },
+                ],
+            }, 
+            {
+                num:3,
+                part:4,
+                vocab: [
+                    
+                    { // words using what we've learnt !! ! !! ! !! ! !! ! !!
+                        word:'',
+                        kana:'', ///////////////////////////////////////////////////
+                        image:''
+                    },
+                ],
+            }, 
+            {
+                num:4,
+                part:1,
+                vocab: [
+                    { 
+                        word:'ra',
+                        kana:'ら',
+                        image:'https://4ch.tokyo/hiragana/img/36-2-ra-hiragana.jpg'
+                    },
+                    {   
+                        word:'ri',
+                        kana:'り',
+                        image:'https://4ch.tokyo/hiragana/img/37-2-ri-hiragana.jpg'
+                    },
+                    {
+                        word:'ru',
+                        kana:'る',
+                        image:'https://4ch.tokyo/hiragana/img/38-2-ru-hiragana.jpg'
+                    },
+                    {
+                        word:'re',
+                        kana:'れ',
+                        image:'https://4ch.tokyo/hiragana/img/39-2-re-hiragana.jpg'
+                    },
+                    {
+                        word:'ro',
+                        kana:'ろ',
+                        image:'https://4ch.tokyo/hiragana/img/40-2-ho-hiragana.jpg'
+                    },
+                ],
+            }, 
+            {
+                num:4,
+                part:2,
+                vocab: [
+                    
+                    { // words using what we've learnt !! ! !! ! !! ! !! ! !!
+                        word:'',
+                        kana:'', ///////////////////////////////////////////////////
+                        image:''
+                    },
+                ],
+            }, 
+            {
+                num:4,
+                part:3,
+                vocab: [
+                    { 
+                        word:'ya',
+                        kana:'や',
+                        image:'https://4ch.tokyo/hiragana/img/41-2-ya-hiragana.jpg'
+                    },
+                    {   
+                        word:'yu',
+                        kana:'ゆ',
+                        image:'https://4ch.tokyo/hiragana/img/42-2-yu-hiragana.jpg'
+                    },
+                    {
+                        word:'yo',
+                        kana:'よ',
+                        image:'https://4ch.tokyo/hiragana/img/43-2-yo-hiragana.jpg'
+                    },
+                    {
+                        word:'wa',
+                        kana:'わ',
+                        image:'https://4ch.tokyo/hiragana/img/44-2-wa-hiragana.jpg'
+                    },
+                    {
+                        word:'n',
+                        kana:'n',
+                        image:'https://4ch.tokyo/hiragana/img/45-2-n-hiragana.jpg'
+                    },
+                ],
+            }, 
+            {
+                num:4,
+                part:4,
+                vocab: [
+                    
+                    { // words using what we've learnt !! ! !! ! !! ! !! ! !!
+                        word:'',
+                        kana:'', ///////////////////////////////////////////////////
+                        image:''
+                    },
                 ],
             }, 
         ]);
@@ -237,14 +445,29 @@ db.once('open', async () => {
         const results = await Module.create([
             {
                 num:1,
-                title:'Intro to Hiragana',
+                title:'Hiragana: Intro',
                 lessons:[lessons[0], lessons[1], lessons[2], lessons[3]],
             }, 
             {
                 num:2,
-                title:'Hiragana 2',
+                title:'Hiragana: 2',
                 lessons:[lessons[4], lessons[5], lessons[6], lessons[7]],
             }, 
+            {
+                num:3,
+                title:'Hiragana: 3',
+                lessons:[lessons[8], lessons[9], lessons[10], lessons[11]],
+            }, 
+            {
+                num:4,
+                title:'Hiragana: Conclusion',
+                lessons:[lessons[12], lessons[13], lessons[14], lessons[15]],
+            }, 
+            // {
+            //     num:5,
+            //     title:'Vocab 1: Reading Hiragana',
+            //     lessons:[lessons[13], lessons[14], lessons[15], lessons[16]],
+            // }, 
         ]);
     } catch( err ){
         console.log('Error creating Modules:', err);
@@ -304,18 +527,21 @@ db.once('open', async () => {
             {
                 name:'Alex',
                 email:'alex@ga.co',
+                xp:0,
                 passwordDigest: bcrypt.hashSync('chicken', 10),
                 langs:langs[0]
             }, 
             {
                 name:'Ro',
                 email:'ro@ga.co',
+                xp:0,
                 passwordDigest: bcrypt.hashSync('chicken', 10),
                 langs:langs[0]
             }, 
             {
                 name:'luke',
                 email:'luke@ga.co',
+                xp:0,
                 passwordDigest: bcrypt.hashSync('chicken', 10),
                 langs:langs[0]
             }, 

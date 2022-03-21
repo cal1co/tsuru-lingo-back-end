@@ -43,6 +43,34 @@ module.exports = {
         } catch (err) {
             
         }
+    },
+
+    async practice(req, res){
+        function randomise(input){
+            return input.sort((a,b) => 0.5 - Math.random())
+        } 
+        try {
+            // console.log('Getting module practice!', req)
+            const module = await Module.findOne({ code: req.params.lang })
+            .populate('lessons')
+            console.log("NUM", req.params.num)
+            let modLessons = []
+            module.lessons.map((e) => {modLessons.push(e.vocab)})
+            let modVocab = []
+            modLessons.forEach((e) => {
+                modVocab.push(e)
+            })
+            let randVocab = randomise(modVocab.flat())
+            let pracLesson = []
+            for (let i = 0; i < 6; i++){
+                pracLesson.push(randVocab[i])
+            }
+            console.log(pracLesson)
+
+            res.json({num: parseInt(req.params.num), part:5, vocab:pracLesson})
+        } catch (err) {
+            
+        }
     }
 
 

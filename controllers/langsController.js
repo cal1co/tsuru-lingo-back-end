@@ -24,9 +24,15 @@ module.exports = {
 
     async module(req, res){
         try {
-            const module = await Module.findOne({ code: req.params.lang })
+            const module = await Module.find({ code: req.params.lang })
             .populate('lessons')
-                let content = module.lessons[req.params.module - 1] // this is hard coded <---- should change depending on whether or not a user has completed the previous lesson!!!!!
+            console.log(module, 'params:', req.params)
+            let lessonsArr = []
+            module.forEach((e) => {
+                lessonsArr.push(e.lessons)
+            })
+            let flatArr = lessonsArr.flat()
+                content = flatArr[req.params.module - 1] // this is hard coded <---- should change depending on whether or not a user has completed the previous lesson!!!!!
                 res.json(content)
                 console.log('fetching module content:', content)
                 console.log('all content:', module.lessons)

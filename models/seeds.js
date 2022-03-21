@@ -36,27 +36,27 @@ db.once('open', async () => {
                     {
                         word:'a',
                         kana:'あ',
-                        image:'https://4ch.tokyo/hiragana/img/1-1-a-hiragana.jpg'
+                        image:'https://4ch.tokyo/hiragana/img/1-2-a-hiragana.jpg'
                     },
                     {
                         word:'i',
                         kana:'い',
-                        image:'https://4ch.tokyo/hiragana/img/2-1-i-hiragana.jpg'
+                        image:'https://4ch.tokyo/hiragana/img/2-2-i-hiragana.jpg'
                     },
                     {
                         word:'u',
                         kana:'う',
-                        image:'https://4ch.tokyo/hiragana/img/3-1-u-hiragana.jpg'
+                        image:'https://4ch.tokyo/hiragana/img/3-2-u-hiragana.jpg'
                     },
                     {
                         word:'e',
                         kana:'え',
-                        image:'https://4ch.tokyo/hiragana/img/4-1-e-hiragana.jpg'
+                        image:'https://4ch.tokyo/hiragana/img/4-2-e-hiragana.jpg'
                     },
                     {
                         word:'o',
                         kana:'お',
-                        image:'https://4ch.tokyo/hiragana/img/5-1-o-hiragana.jpg'
+                        image:'https://4ch.tokyo/hiragana/img/5-2-o-hiragana.jpg'
                     },
                 ],
             }, 
@@ -67,27 +67,27 @@ db.once('open', async () => {
                     {
                         word:'ka',
                         kana:'か',
-                        image:'https://4ch.tokyo/hiragana/img/6-1-ka-hiragana.jpg'
+                        image:'https://4ch.tokyo/hiragana/img/6-2-ka-hiragana.jpg'
                     },
                     {
                         word:'ki',
                         kana:'き',
-                        image:'https://4ch.tokyo/hiragana/img/7-1-ki-hiragana.jpgg'
+                        image:'https://4ch.tokyo/hiragana/img/7-2-ki-hiragana.jpg'
                     },
                     {
                         word:'ku',
                         kana:'く',
-                        image:'https://4ch.tokyo/hiragana/img/8-1-ku-hiragana.jpg'
+                        image:'https://4ch.tokyo/hiragana/img/8-2-ku-hiragana.jpg'
                     },
                     {
                         word:'ke',
                         kana:'け',
-                        image:'https://4ch.tokyo/hiragana/img/9-1-ke-hiragana.jpg'
+                        image:'https://4ch.tokyo/hiragana/img/9-2-ke-hiragana.jpg'
                     },
                     {
                         word:'ko',
                         kana:'こ',
-                        image:'https://4ch.tokyo/hiragana/img/10-1-ko-hiragana.jpg'
+                        image:'https://4ch.tokyo/hiragana/img/10-2-ko-hiragana.jpg'
                     },
                 ],
             }, 
@@ -98,27 +98,27 @@ db.once('open', async () => {
                     {
                         word:'sa',
                         kana:'さ',
-                        image:'https://4ch.tokyo/hiragana/img/11-1-sa-hiragana.jpg'
+                        image:'https://4ch.tokyo/hiragana/img/11-2-sa-hiragana.jpg'
                     },
                     {
                         word:'shi',
                         kana:'し',
-                        image:'https://4ch.tokyo/hiragana/img/12-1-si-hiragana.jpg'
+                        image:'https://4ch.tokyo/hiragana/img/12-2-si-hiragana.jpg'
                     },
                     {
                         word:'su',
                         kana:'す',
-                        image:'https://4ch.tokyo/hiragana/img/13-1-su-hiragana.jpg'
+                        image:'https://4ch.tokyo/hiragana/img/13-2-su-hiragana.jpg'
                     },
                     {
                         word:'se',
                         kana:'せ',
-                        image:'https://4ch.tokyo/hiragana/img/14-1-se-hiragana.jpg'
+                        image:'https://4ch.tokyo/hiragana/img/14-2-se-hiragana.jpg'
                     },
                     {
                         word:'so',
                         kana:'そ',
-                        image:'https://4ch.tokyo/hiragana/img/15-1-so-hiragana.jpg'
+                        image:'https://4ch.tokyo/hiragana/img/15-2-so-hiragana.jpg'
                     },
                 ],
             }, 
@@ -169,6 +169,48 @@ db.once('open', async () => {
                     // },
                 ],
             }, 
+            {
+                num:1,
+                part:5,
+                vocab: [
+                    
+                    { // words using what we've learnt !! ! !! ! !! ! !! ! !!
+                        word:'ta',
+                        kana:'た',
+                        image:'https://4ch.tokyo/hiragana/img/16-2-ta-hiragana.jpg'
+                    },
+                    {   
+                        word:'chi',
+                        kana:'ち',
+                        image:'https://4ch.tokyo/hiragana/img/17-2-ti-hiragana.jpg'
+                    },
+                    {
+                        word:'tsu',
+                        kana:'つ',
+                        image:'https://4ch.tokyo/hiragana/img/18-2-tu-hiragana.jpg'
+                    },
+                    {
+                        word:'te',
+                        kana:'て',
+                        image:'https://4ch.tokyo/hiragana/img/19-2-te-hiragana.jpg'
+                    },
+                    {
+                        word:'to',
+                        kana:'と',
+                        image:'https://4ch.tokyo/hiragana/img/20-2-to-hiragana.jpg'
+                    },
+                    // {
+                    //     word:'apple',
+                    //     kana:'りんご',
+                    //     image:'https://media.istockphoto.com/vectors/simple-apple-in-flat-style-vector-illustration-vector-id1141529240?k=20&m=1141529240&s=612x612&w=0&h=_j9z-sPT6AqFDSSXHnSYWrXOvDOgyMmSdTUrBiZULCo='
+                    // },
+                    // {
+                    //     word:'cloud',
+                    //     kana:'くも',
+                    //     image:'https://images.unsplash.com/photo-1569428034239-f9565e32e224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80'
+                    // },
+                ],
+            }, 
         ]);
     } catch( err ){
         console.log('Error creating Modules:', err);
@@ -187,10 +229,7 @@ db.once('open', async () => {
     // ///////////////// LESSON ///////////////////////////////////////
 
 
-
-
     // ///////////////// MODULE ///////////////////////////////////////
-    
     
     await Module.deleteMany();
 
@@ -198,8 +237,13 @@ db.once('open', async () => {
         const results = await Module.create([
             {
                 num:1,
-                title:'intro to hiragana',
+                title:'Intro to Hiragana',
                 lessons:[lessons[0], lessons[1], lessons[2], lessons[3]],
+            }, 
+            {
+                num:2,
+                title:'Hiragana 2',
+                lessons:[lessons[4], lessons[5], lessons[6], lessons[7]],
             }, 
         ]);
     } catch( err ){

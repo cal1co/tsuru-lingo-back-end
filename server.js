@@ -119,9 +119,11 @@ app.post('/:module/pass', async (req, res) => {
         checkAuth(req.body.token)
         console.log('LANG COMPLETE', user._id)
         console.log('PASSED', user.passed)
+        
         if(!user.passed.includes(req.body.lesson)){
+            console.log(`user doesn't include:`, req.body.lesson)
             user.passed.push(req.body.lesson)
-            console.log('lesson passed and added to user')
+            // console.log('lesson passed and added to user')
         }
         console.log(user)
         user.save()
@@ -129,3 +131,15 @@ app.post('/:module/pass', async (req, res) => {
         
     }
 })
+
+app.get('/users/current/user', async (req, res) => {
+    try {
+        console.log('fetching users', req.query.token)
+        checkAuth(req.query.token)
+        res.json( user );
+    } catch (err) {
+        console.log('error fetching info:', err)
+    }
+
+})
+

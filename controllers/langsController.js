@@ -2,8 +2,13 @@ const { off } = require('../models/Lang');
 const Lang = require('../models/Lang')
 const Module = require('../models/Module')
 const Lesson = require('../models/Lesson')
+const jwt = require('jsonwebtoken')
+const jwtAuthenticate = require('express-jwt')
+
 
 module.exports = {
+
+    
 
     async show(req, res) {
         try{
@@ -34,11 +39,10 @@ module.exports = {
     async pass(req, res){
         try {
             console.log('PASS CALLED', req.body.token)
+            checkAuth(req.body.token)
         } catch (err) {
             
         }
-
-
     }
 
 

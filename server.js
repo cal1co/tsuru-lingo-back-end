@@ -44,6 +44,7 @@ app.use( express.urlencoded({ extended: true }) );
 
 
 // INDEX JS <-  if (token) axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
+// app.get('*', checkAuth())
 
 
 
@@ -60,8 +61,8 @@ app.post('/login', async (req, res) => {
             const token = jwt.sign(
                 { _id: user._id},
                 process.env.SERVER_SECRET_KEY,
-                { expiresIn: '72h'}
-
+                // { algorithm: 'RS256' },
+                { expiresIn: '72h'},
             );
             res.json({token})
             // In your frontend, sgtore the JWT token in state or even 
@@ -80,25 +81,51 @@ app.post('/login', async (req, res) => {
 // const generateToken = (id) => {
 //     return jwt.sign({id}, process.env.SERVER_SECRET_KEY)
 // }
+let user = ''
+function checkAuth(req, res, next){
+    console.log('checkAuth')
+    const token = req
 
+    if (token){
+        jwt.verify(token, process.env.SERVER_SECRET_KEY, async (err, decodedToken) => {
+            if (err){
+                console.log(err.message);
+                res.locals.user = null; 
+                next();
+            } else {
+                console.log(decodedToken);
+                user = await User.findOne({_id:decodedToken._id})
+                return user 
+                // res.locals.currentUser = user 
+                // console.log(res)
+                next()
+            }
+        }) // verify 
+    } else {
+        res.locals.currentUser = null;
+        next();
+    } // if token - else 
+}
 
-// app.use(checkAuth())
-
-// app.use( async (req,res,next) => {
-
-//     try {
-//         const user = await User.findOne({_id:req.auth._id})
-//         req.user = user;
-//         next(); // move on to next handler 
-//     } catch(err){
-//         console.log('Error querying user in auth middleware', err)
-//         res.sendStatus(500);
-//     }
-// })
 
 app.get('/:lang', langsController.show)
 
 app.get('/:lang/:module', langsController.module)
 
 
-app.post('/:module/pass', langsController.pass)
+app.post('/:module/pass', async (req, res) => {
+    try {
+        console.log('PASS CALLED', req.body.token)
+        checkAuth(req.body.token)
+        console.log('LANG COMPLETE', user._id)
+        console.log('PASSED', user.passed)
+        if(!user.passed.includes(req.body.lesson)){
+            user.passed.push(req.body.lesson)
+            console.log('lesson passed and added to user')
+        }
+        console.log(user)
+        user.save()
+    } catch (err) {
+        
+    }
+})

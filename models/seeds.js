@@ -203,7 +203,7 @@ db.once('open', async () => {
                     },
                     {
                         word:'outside',
-                        kana:'つる', ///////////////////////////////////////////////////
+                        kana:'そと', ///////////////////////////////////////////////////
                         image:'https://listimg.pinclipart.com/picdir/s/98-987205_picture-preposition-of-place-outside-clipart.png'
                     },
                     {

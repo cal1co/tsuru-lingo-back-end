@@ -42,7 +42,7 @@ db.on('error', (err) => {
 
 app.use( express.urlencoded({ extended: true }) );
 
-
+ 
 
 // INDEX JS <-  if (token) axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
 // app.get('*', checkAuth())

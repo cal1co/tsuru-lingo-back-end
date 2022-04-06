@@ -26,8 +26,9 @@ app.listen(PORT, () => {
 
 // MongoDB initialisation section //////////////////
 const dotenv = require('dotenv').config()
-const mongoose = require('mongoose');
 
+const mongoose = require('mongoose');
+console.log('!!!!!!!!!!!!!!!!!!!!!!"', process.env.MONGO_URI)
 uri = process.env.MONGO_URI || 'mongodb://127.0.0.1/tsuru'
 mongoose.connect(uri);
 

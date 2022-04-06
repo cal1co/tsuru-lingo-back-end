@@ -31,7 +31,8 @@ const mongoose = require('mongoose');
 let ure = process.env.MONGO_URI
 console.log('!!!!!!!!!!!!!!!!!!!!!!:', `${ure}`)
 uri = `${process.env.MONGO_URI}` || 'mongodb://127.0.0.1/tsuru'
-mongoose.connect(uri);
+// mongoose.connect(uri);
+mongoose.connect(`mongodb+srv://alex:chicken99@cluster0.zhop1.mongodb.net/tsuru?retryWrites=true&w=majority`);
 
 const db = mongoose.connection;
 

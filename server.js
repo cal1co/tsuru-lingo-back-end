@@ -1,3 +1,4 @@
+const dotenv = require('dotenv').config()
 const express = require('express');
 const app = express();
 // const PORT = 3000;
@@ -25,7 +26,6 @@ app.listen(PORT, () => {
 });
 
 // MongoDB initialisation section //////////////////
-const dotenv = require('dotenv').config()
 
 const mongoose = require('mongoose');
 console.log('!!!!!!!!!!!!!!!!!!!!!!"', process.env.MONGO_URI)

@@ -30,7 +30,7 @@ app.listen(PORT, () => {
 const mongoose = require('mongoose');
 let ure = process.env.MONGO_URI
 console.log('!!!!!!!!!!!!!!!!!!!!!!:', ure)
-uri = process.env.MONGO_URI || 'mongodb://127.0.0.1/tsuru'
+uri = `${process.env.MONGO_URI}` || 'mongodb://127.0.0.1/tsuru'
 mongoose.connect(uri);
 
 const db = mongoose.connection;
